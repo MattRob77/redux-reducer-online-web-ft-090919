@@ -1,3 +1,3 @@
 export function manageFriends(state = { friends: [] }, action){
-  switch
+  switch (action)
 }

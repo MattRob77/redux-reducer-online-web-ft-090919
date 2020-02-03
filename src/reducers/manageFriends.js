@@ -1,2 +1,2 @@
-export function manageFriends(state = { friends =[]}, action){
+export function manageFriends(state = { friends: [] }, action){
 }

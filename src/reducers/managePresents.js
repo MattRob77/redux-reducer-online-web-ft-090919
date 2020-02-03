@@ -3,6 +3,6 @@ export function managePresents(state = { numberOfPresets:0 }, action){
     case "Increase": 
       return {numberOfPresets: state.numberOfPresets + 1}; 
       default: 
-      return state 
+      return state; 
   }
 }

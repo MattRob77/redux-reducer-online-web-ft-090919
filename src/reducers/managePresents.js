@@ -1,8 +1,8 @@
-export function managePresents(state = { numberOfPresets:0 }, action){
+export function managePresents(state = { numberOfPresents: 0 }, action) {
   switch (action.type) {
-    case "Increase": 
-      return {numberOfPresets: state.numberOfPresets + 1}; 
-      default: 
-      return state; 
+    case "INCREASE":
+      return { numberOfPresents: state.numberOfPresents + 1 };
+    default:
+      return state;
   }
 }

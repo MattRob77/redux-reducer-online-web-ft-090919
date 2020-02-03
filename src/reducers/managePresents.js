@@ -1,3 +1,5 @@
 export function managePresents(state = { numberOfPresets:0 }, action){
-  switch 
+  switch (action.type) {
+    
+  }
 }

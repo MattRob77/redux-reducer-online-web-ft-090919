@@ -1,8 +1,23 @@
-export function manageFriends(state = { friends: [] }, action){
+export function manageFriends(state = { friends: [] }, action) {
   switch (action.type) {
-    case "ADD_FRIEND": 
+    case "ADD_FRIEND":
       return {
-        friends:
-      }
+        friends: [
+          ...state.friends,
+          {
+            name: action.friend.name,
+            hometown: action.friend.hometown,
+            id: action.friend.id
+          }
+        ]
+      };
+    case "REMOVE_FRIEND":
+      return {
+        friends: state.friends.filter(friend => {
+          return friend.id != action.id;
+        })
+      };
+    default:
+      return state;
   }
 }

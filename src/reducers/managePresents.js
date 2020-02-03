@@ -1,2 +1,2 @@
-export function managePresents(state = {numberOfPresets:0}, action){
+export function managePresents(state = { numberOfPresets:0 }, action){
 }
